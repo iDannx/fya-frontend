@@ -9,6 +9,12 @@ innovacion@fya.com
 innovaciontest*!
 ```
 
+## Descargar APK
+
+```
+https://github.com/iDannx/fya-frontend/releases/tag/v1.0.0
+```
+
 ## Stack
 
 - Ionic React 8 / React 18 / TypeScript
