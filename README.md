@@ -2,6 +2,12 @@
 
 Aplicación Ionic + React para registrar y consultar créditos, empaquetada como APK con Capacitor. Consume la API de `fya-credits-api` y autentica contra Auth0 con Authorization Code + PKCE.
 
+## Deploy
+
+```
+https://fya.elion.com.co/
+```
+
 ## Usuario de prueba
 
 ```
