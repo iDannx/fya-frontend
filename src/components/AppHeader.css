@@ -1,0 +1,19 @@
+.app-header__bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 12px;
+}
+
+.app-header__title {
+  flex: 1;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.app-header__signout {
+  --color: var(--fya-text-muted);
+  font-size: 13px;
+  font-weight: 500;
+}

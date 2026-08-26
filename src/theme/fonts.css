@@ -1,0 +1,11 @@
+@import '@fontsource/montserrat/400.css';
+@import '@fontsource/montserrat/500.css';
+@import '@fontsource/montserrat/600.css';
+
+@font-face {
+  font-family: 'Branding Medium';
+  src: url('../assets/fonts/BrandingMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

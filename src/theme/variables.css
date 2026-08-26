@@ -1,0 +1,78 @@
+:root {
+  --fya-primary: #00d280;
+  --fya-dark: #052224;
+  --fya-white: #ffffff;
+
+  --fya-text-muted: rgba(5, 34, 36, 0.62);
+  --fya-border: rgba(5, 34, 36, 0.12);
+  --fya-surface: rgba(5, 34, 36, 0.035);
+  --fya-disabled: rgba(5, 34, 36, 0.3);
+  --fya-danger: #b3261e;
+
+  --fya-radius: 12px;
+  --fya-radius-sm: 8px;
+
+  --fya-font-brand: 'Branding Medium', 'Montserrat', system-ui, sans-serif;
+  --fya-font-body: 'Montserrat', system-ui, 'Segoe UI', sans-serif;
+
+  --ion-font-family: var(--fya-font-body);
+
+  --ion-background-color: var(--fya-white);
+  --ion-background-color-rgb: 255, 255, 255;
+  --ion-text-color: var(--fya-dark);
+  --ion-text-color-rgb: 5, 34, 36;
+
+  --ion-color-primary: var(--fya-primary);
+  --ion-color-primary-rgb: 0, 210, 128;
+  --ion-color-primary-contrast: var(--fya-dark);
+  --ion-color-primary-contrast-rgb: 5, 34, 36;
+  --ion-color-primary-shade: #00b971;
+  --ion-color-primary-tint: #1ad68d;
+
+  --ion-toolbar-background: var(--fya-white);
+  --ion-toolbar-color: var(--fya-dark);
+  --ion-toolbar-border-color: var(--fya-border);
+
+  --ion-item-background: var(--fya-white);
+  --ion-item-border-color: var(--fya-border);
+  --ion-border-color: var(--fya-border);
+}
+
+body {
+  font-family: var(--fya-font-body);
+  color: var(--fya-dark);
+  background: var(--fya-white);
+}
+
+h1,
+h2,
+h3,
+ion-title {
+  font-family: var(--fya-font-brand);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+ion-button {
+  --border-radius: var(--fya-radius-sm);
+  --box-shadow: none;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+ion-toolbar {
+  --border-width: 0 0 1px 0;
+  --border-color: var(--fya-border);
+}
+
+ion-tab-bar {
+  --background: var(--fya-white);
+  --color: var(--fya-text-muted);
+  --color-selected: var(--fya-dark);
+  border-top: 1px solid var(--fya-border);
+}
+
+ion-tab-button {
+  font-weight: 500;
+}

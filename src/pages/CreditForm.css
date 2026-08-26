@@ -1,0 +1,29 @@
+.credit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 24px 20px 40px;
+}
+
+.credit-form__intro {
+  margin: 0;
+  color: var(--fya-text-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.credit-form__submit {
+  margin-top: 8px;
+}
+
+.fya-toast--ok {
+  --background: var(--fya-primary);
+  --color: var(--fya-dark);
+}
+
+.fya-toast--error {
+  --background: var(--fya-dark);
+  --color: var(--fya-white);
+}
