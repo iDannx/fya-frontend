@@ -149,18 +149,3 @@ assets/           fuentes de icono y splash, no entran en el bundle
 
 **Se añadió un color fuera de la paleta, `--fya-danger`,** para los errores de validación. Con `#052224` serían tipográficamente indistinguibles de las etiquetas y no se vería qué campo está mal.
 
-## Pruebas
-
-No hay. Es la carencia más clara del repositorio.
-
-La validación del formulario y el ciclo de orden se comprobaron a mano en navegador y emulador, pero no quedó nada automatizado. Con más tiempo el orden sería: Vitest para `validate()` de `CreditForm` y para los formateadores de `format.ts`, que son funciones puras y dan el mejor retorno; después Testing Library para `useCredits`.
-
-Tampoco hay linter configurado. Lo que sí hay es `tsconfig.json` con `strict`, `noUnusedLocals` y `noUnusedParameters`, así que el código muerto rompe el build en lugar de acumularse.
-
-## Limitaciones
-
-- **Sin tests ni linter**, como está dicho arriba.
-- **El bundle son 1,3 MB** sin dividir en chunks. Para un APK, donde los assets se sirven locales, no compensaba el trabajo.
-- **El límite de 10 peticiones por minuto del backend se alcanza explorando la app**, porque cada clic en un chip de orden lanza una. El mensaje que se muestra es correcto y se recupera una petición cada 6 segundos, pero agrupar los cambios de orden con un retardo lo evitaría.
-- **El logo va como PNG**, no como SVG. El SVG que había en los assets de marca no tenía trazos.
-- **Solo Android.** El proyecto de iOS no está generado.
